@@ -93,6 +93,66 @@ h6 {
   src: url(../fonts/TBCContractica-Medium.ttf);
   font-weight: 500;
 }
+.btn {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  border: none;
+  color: #f5f5f5;
+  font-family: "TBC Contractica CAPS";
+  font-weight: 700;
+  font-size: 1.4rem;
+  border-radius: 1rem;
+  background: #6691ff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: #f5f5f5;
+  color: #6691ff;
+}
+.btn:hover svg path {
+  fill: #6691ff;
+}
+.btn:active {
+  background: #435fa6;
+  color: #f5f5f5;
+}
+.btn:active svg path {
+  fill: #f5f5f5;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 4.5%;
+  right: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.4rem;
+  width: 6.4rem;
+  border-radius: 50%;
+  background: #6691ff;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 9999999;
+}
+.chat-icon:hover {
+  background: #f5f5f5;
+  color: #6691ff;
+}
+.chat-icon:hover svg path {
+  fill: #6691ff;
+}
+.chat-icon:active {
+  background: #435fa6;
+  color: #f5f5f5;
+}
+.chat-icon:active svg path {
+  fill: #f5f5f5;
+}
+
 .nav {
   display: flex;
   gap: 6.7rem;
@@ -169,7 +229,7 @@ h6 {
 
 .header {
   background: #6691ff;
-  padding: 2.4rem 0em;
+  padding: 2.4rem 0rem;
 }
 .header__inner {
   display: flex;
@@ -186,4 +246,108 @@ h6 {
 .header__logos {
   display: flex;
   gap: 1.6rem;
+}
+
+.hero {
+  background-image: url("../images/main-bg-image-min.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  min-height: calc(100vh - 112px);
+  position: relative;
+}
+.hero__inner {
+  max-width: 1473px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1520px) {
+  .hero__inner {
+    padding: 0 5rem;
+  }
+}
+.hero__text-container {
+  max-width: 57.4rem;
+}
+.hero__title {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6.4rem;
+  padding-top: 9.6rem;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1700px) {
+  .hero__title {
+    font-size: 5.5rem;
+    padding-top: 6.4rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 1500px) {
+  .hero__title {
+    font-size: 4.5rem;
+    padding-top: 3.4rem;
+    margin-bottom: 1rem;
+  }
+}
+.hero p {
+  font-family: "TBC Contractica";
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+}
+@media (max-width: 1700px) {
+  .hero p {
+    line-height: 3.2rem;
+  }
+}
+.hero__question {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-top: 4.8rem;
+  margin-bottom: 1.6rem;
+}
+@media (max-width: 1700px) {
+  .hero__question {
+    margin-top: 3.2rem;
+    margin-bottom: 1.1rem;
+  }
+}
+.hero p:nth-of-type(2) {
+  margin-bottom: 6rem;
+}
+@media (max-width: 1700px) {
+  .hero p:nth-of-type(2) {
+    margin-bottom: 4rem;
+  }
+}
+@media (max-width: 1700px) {
+  .hero__img {
+    width: 650px;
+    height: 650px;
+  }
+}
+@media (max-width: 1600px) {
+  .hero__img {
+    width: 600px;
+    height: 600px;
+  }
+}
+@media (max-width: 1500px) {
+  .hero__img {
+    width: 550px;
+    height: 550px;
+  }
+}
+.hero__line {
+  width: 100%;
+  height: 9.6rem;
+  background: rgba(217, 217, 217, 0.2);
+  margin-top: 2%;
 }/*# sourceMappingURL=main.css.map */

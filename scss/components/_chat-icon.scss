@@ -1,17 +1,17 @@
-.btn {
+.chat-icon {
+	position: fixed;
+	bottom: 4.5%;
+	right: 12%;
 	display: flex;
-	gap: 1.6rem;
 	align-items: center;
-	padding: 1.6rem 3.2rem;
-	border: none;
-	color: $text-primary;
-	font-family: "TBC Contractica CAPS";
-	font-weight: 700;
-	font-size: 1.4rem;
-	border-radius: 1rem;
+	justify-content: center;
+	height: 6.4rem;
+	width: 6.4rem;
+	border-radius: 50%;
 	background: $base-color;
 	cursor: pointer;
 	transition: all 0.3s;
+	z-index: 9999999;
 
 	&:hover {
 		background: $text-primary;
