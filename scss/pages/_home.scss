@@ -3,7 +3,7 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
-	min-height: calc(100vh - 112px);
+	min-height: calc(100vh - 11.2rem);
 	position: relative;
 
 	&__inner {
@@ -264,4 +264,266 @@
 .stars_wrapper {
 	overflow: hidden;
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #131a3e 100%);
+}
+
+.heading-primary {
+	font-family: "TBC Contractica CAPS";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.4rem;
+}
+
+.solar {
+	@include max-setter;
+	padding: 0;
+
+	&__planets {
+		display: flex;
+		padding: 6.4rem 0;
+
+		& > div div img {
+			position: relative;
+			z-index: 21321222;
+		}
+	}
+
+	&__text {
+		background: rgba(98, 98, 98, 0.2);
+		backdrop-filter: blur(5px);
+		border-radius: 1rem;
+		padding: 1.6rem;
+		text-align: center;
+
+		h2 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2rem;
+			line-height: 3.6rem;
+		}
+
+		p {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4rem;
+			line-height: 2.1rem;
+			max-width: 18rem;
+		}
+	}
+
+	&__sun {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-line {
+			width: 0.6rem;
+			height: 17.5rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #f6ec42;
+			}
+		}
+	}
+
+	&__mercury {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 38rem;
+		margin-left: -3.5rem;
+
+		&-line {
+			margin-top: -3px;
+			width: 0.4rem;
+			height: 25.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #9daad6;
+			}
+		}
+	}
+
+	&__venus {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 16.5rem;
+		margin-left: -10.4rem;
+
+		&-line {
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #f48258;
+			}
+		}
+	}
+
+	&__earth {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 37rem;
+		margin-left: -9.6rem;
+
+		&-line {
+			margin-top: -1px;
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #2e78bc;
+			}
+		}
+	}
+	&__mars {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 6.5rem;
+		margin-left: -7.2rem;
+
+		&-line {
+			width: 0.6rem;
+			height: 17.5rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #ba4527;
+			}
+		}
+	}
+	&__jupiter {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 34.5rem;
+		margin-left: -7.2rem;
+
+		&-line {
+			margin-top: -3px;
+			width: 0.4rem;
+			height: 25.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #ed8851;
+			}
+		}
+	}
+	&__saturn {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 15.5rem;
+		margin-left: -2.7rem;
+
+		&-line {
+			margin-bottom: -6px;
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #e88624;
+			}
+		}
+	}
+	&__uranus {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 36rem;
+		margin-left: -5.7rem;
+
+		&-line {
+			margin-top: -8px;
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #3dc4ea;
+			}
+		}
+	}
+
+	&__neptune {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 6.5rem;
+		margin-left: -9.2rem;
+
+		&-line {
+			width: 0.6rem;
+			height: 17.5rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #7d67ab;
+			}
+		}
+	}
+
+	&__pluto {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 38rem;
+		margin-left: -10.5rem;
+
+		&-line {
+			margin-top: -1px;
+			width: 0.4rem;
+			height: 25.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #186b90;
+			}
+		}
+	}
 }
