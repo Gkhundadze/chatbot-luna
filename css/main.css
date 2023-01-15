@@ -115,10 +115,6 @@ h6 {
 .btn:hover svg path {
   fill: #6691ff;
 }
-.btn:active {
-  background: #435fa6;
-  color: #f5f5f5;
-}
 .btn:active svg path {
   fill: #f5f5f5;
 }
@@ -808,4 +804,123 @@ h6 {
 }
 .solar__pluto-text h2 {
   color: #186b90;
+}
+
+.about {
+  max-width: 1473px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1520px) {
+  .about {
+    padding: 0 2rem;
+  }
+}
+.about__wrapper {
+  margin-top: 6.4rem;
+  background: rgba(98, 98, 98, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  padding: 2.4rem;
+  display: flex;
+  gap: 13.6rem;
+}
+@media (max-width: 1500px) {
+  .about__wrapper {
+    gap: 8rem;
+  }
+}
+@media (max-width: 1500px) {
+  .about__wrapper {
+    gap: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+  }
+}
+.about__profile {
+  display: inline-block;
+}
+.about__profile img {
+  margin-bottom: 3.3rem;
+}
+.about__profile h3 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.about__profile p {
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #929292;
+  margin-bottom: 2.3rem;
+}
+.about__profile__icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.about__profile__icons svg {
+  cursor: pointer;
+}
+.about__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about__info p {
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 38px;
+  /* or 238% */
+  color: #ffffff;
+  max-width: 93rem;
+  margin-bottom: 3.2rem;
+}
+.about__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  gap: 1.6rem;
+  background-color: transparent;
+  border: 4px solid #6691ff;
+  border-radius: 1rem;
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #6691ff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.about__btn svg {
+  margin-top: -5px;
+}
+.about__btn:hover {
+  background: #f5f5f5;
+  color: #6691ff;
+  border: 4px solid #f5f5f5;
+}
+.about__btn:hover svg path {
+  fill: #f5f5f5;
+}
+.about__btn:active {
+  background: #435fa6;
+  color: #f5f5f5;
+  border: 4px solid #435fa6;
+}
+.about__btn:active:last-child {
+  fill: #f5f5f5;
 }/*# sourceMappingURL=main.css.map */

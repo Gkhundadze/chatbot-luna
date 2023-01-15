@@ -527,3 +527,134 @@
 		}
 	}
 }
+
+.about {
+	@include max-setter;
+	margin-bottom: 4rem;
+
+	&__wrapper {
+		margin-top: 6.4rem;
+		background: rgba(98, 98, 98, 0.2);
+		backdrop-filter: blur(5px);
+		/* Note: backdrop-filter has minimal browser support */
+
+		border-radius: 10px;
+		padding: 2.4rem;
+
+		display: flex;
+		gap: 13.6rem;
+
+		@media (max-width: 1500px) {
+			gap: 8rem;
+		}
+
+		@media (max-width: 1500px) {
+			gap: 4rem;
+		}
+
+		@media (max-width: 900px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__profile {
+		display: inline-block;
+		img {
+			margin-bottom: 3.3rem;
+		}
+
+		h3 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2.4rem;
+			margin-bottom: 0.8rem;
+		}
+
+		p {
+			font-family: "TBC Contractica";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.6rem;
+			color: #929292;
+			margin-bottom: 2.3rem;
+		}
+
+		&__icons {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 1.8rem;
+
+			svg {
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		p {
+			font-family: "TBC Contractica";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 38px;
+			/* or 238% */
+
+			color: #ffffff;
+			max-width: 93rem;
+			// text-align: justify;
+			margin-bottom: 3.2rem;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.6rem 3.2rem;
+		gap: 1.6rem;
+		background-color: transparent;
+
+		border: 4px solid #6691ff;
+		border-radius: 1rem;
+
+		font-family: "TBC Contractica CAPS";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.4rem;
+		color: #6691ff;
+		cursor: pointer;
+
+		svg {
+			margin-top: -5px;
+		}
+
+		transition: all 0.3s;
+
+		&:hover {
+			background: $text-primary;
+			color: $base-color;
+
+			svg path {
+				fill: $text-primary;
+			}
+
+			border: 4px solid $text-primary;
+		}
+
+		&:active {
+			background: #435fa6;
+			color: $text-primary;
+
+			border: 4px solid #435fa6;
+
+			&:last-child {
+				fill: $text-primary;
+			}
+		}
+	}
+}
