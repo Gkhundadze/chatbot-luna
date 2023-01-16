@@ -12,3 +12,11 @@ navToggle.addEventListener("click", () => {
 		navToggle.setAttribute("aria-expanded", false);
 	}
 });
+
+new ScrollBooster({
+	viewport: document.querySelector(".solar"),
+	content: document.querySelector(".solar__planets"),
+	scrollMode: "transform", // use CSS 'transform' property
+	direction: "horizontal", // allow only horizontal scrolling
+	textSelection: "true",
+});

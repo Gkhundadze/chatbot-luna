@@ -336,7 +336,7 @@ h6 {
 }
 @media (max-width: 1520px) {
   .header__inner {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 .header__logos {
@@ -349,7 +349,7 @@ h6 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  min-height: calc(100vh - 112px);
+  min-height: calc(100vh - 11.2rem);
   position: relative;
 }
 .hero__inner {
@@ -362,7 +362,7 @@ h6 {
 }
 @media (max-width: 1520px) {
   .hero__inner {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 .hero__text-container {
@@ -458,7 +458,7 @@ h6 {
 }
 @media (max-width: 1520px) {
   .history__wrapper {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 @media (min-width: 1200px) {
@@ -605,4 +605,207 @@ h6 {
 .stars_wrapper {
   overflow: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #131a3e 100%);
+}
+
+.heading-primary {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.solar {
+  max-width: 1473px;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (max-width: 1520px) {
+  .solar {
+    padding: 0 2rem;
+  }
+}
+.solar__planets {
+  display: flex;
+  padding: 6.4rem 0;
+}
+.solar__planets > div div img {
+  position: relative;
+  z-index: 21321222;
+}
+.solar__text {
+  background: rgba(98, 98, 98, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  padding: 1.6rem;
+  text-align: center;
+}
+.solar__text h2 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+.solar__text p {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  max-width: 18rem;
+}
+.solar__sun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.solar__sun-line {
+  width: 0.6rem;
+  height: 17.5rem;
+  background: #d9d9d9;
+}
+.solar__sun-text h2 {
+  color: #f6ec42;
+}
+.solar__mercury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38rem;
+  margin-left: -3.5rem;
+}
+.solar__mercury-line {
+  margin-top: -3px;
+  width: 0.4rem;
+  height: 25.8rem;
+  background: #d9d9d9;
+}
+.solar__mercury-text h2 {
+  color: #9daad6;
+}
+.solar__venus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16.5rem;
+  margin-left: -10.4rem;
+}
+.solar__venus-line {
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__venus-text h2 {
+  color: #f48258;
+}
+.solar__earth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37rem;
+  margin-left: -9.6rem;
+}
+.solar__earth-line {
+  margin-top: -1px;
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__earth-text h2 {
+  color: #2e78bc;
+}
+.solar__mars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.5rem;
+  margin-left: -7.2rem;
+}
+.solar__mars-line {
+  width: 0.6rem;
+  height: 17.5rem;
+  background: #d9d9d9;
+}
+.solar__mars-text h2 {
+  color: #ba4527;
+}
+.solar__jupiter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 34.5rem;
+  margin-left: -7.2rem;
+}
+.solar__jupiter-line {
+  margin-top: -3px;
+  width: 0.4rem;
+  height: 25.8rem;
+  background: #d9d9d9;
+}
+.solar__jupiter-text h2 {
+  color: #ed8851;
+}
+.solar__saturn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15.5rem;
+  margin-left: -2.7rem;
+}
+.solar__saturn-line {
+  margin-bottom: -6px;
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__saturn-text h2 {
+  color: #e88624;
+}
+.solar__uranus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36rem;
+  margin-left: -5.7rem;
+}
+.solar__uranus-line {
+  margin-top: -8px;
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__uranus-text h2 {
+  color: #3dc4ea;
+}
+.solar__neptune {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.5rem;
+  margin-left: -9.2rem;
+}
+.solar__neptune-line {
+  width: 0.6rem;
+  height: 17.5rem;
+  background: #d9d9d9;
+}
+.solar__neptune-text h2 {
+  color: #7d67ab;
+}
+.solar__pluto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38rem;
+  margin-left: -10.5rem;
+}
+.solar__pluto-line {
+  margin-top: -1px;
+  width: 0.4rem;
+  height: 25.8rem;
+  background: #d9d9d9;
+}
+.solar__pluto-text h2 {
+  color: #186b90;
 }/*# sourceMappingURL=main.css.map */
