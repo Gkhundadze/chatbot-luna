@@ -37,8 +37,8 @@
 
 	@media (max-width: 1050px) {
 		position: fixed;
-		inset: 0 0 0 50%;
-		z-index: 1000;
+		inset: 0 0 0 70%;
+		z-index: 100000;
 
 		flex-direction: column;
 		gap: 5rem;
@@ -53,6 +53,18 @@
 			transform: translateX(0%);
 		}
 	}
+
+	@media (max-width: 850px) {
+		inset: 0 0 0 60%;
+	}
+
+	@media (max-width: 634px) {
+		inset: 0 0 0 50%;
+	}
+
+	@media (max-width: 550px) {
+		inset: 0 0 0 40%;
+	}
 }
 
 .mobile-nav-toggle {
@@ -61,18 +73,18 @@
 		display: block;
 		position: absolute;
 		background-color: transparent;
-		background-image: url(../../images/menu-4-24.png);
+		background-image: url(./../images/menu-4-24.png);
 		width: 3rem;
 		background-repeat: no-repeat;
 		border: 0;
 		aspect-ratio: 1;
 		top: 4.4rem;
-		right: 5rem;
-		z-index: 9999;
+		right: 3rem;
+		z-index: 999999;
 	}
 
 	&[aria-expanded="true"] {
-		background-image: url(../../images/icons8-close.svg);
+		background-image: url(./../images/icons8-close.svg);
 		fill: #fff;
 	}
 }
