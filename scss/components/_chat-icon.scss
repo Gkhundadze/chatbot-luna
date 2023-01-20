@@ -1,7 +1,7 @@
 .chat-icon {
 	position: fixed;
-	bottom: 2.5%;
-	right: 2%;
+	bottom: 2%;
+	right: 2.5%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -12,6 +12,10 @@
 	cursor: pointer;
 	transition: all 0.3s;
 	z-index: 9999999;
+
+	@media (max-width: 1537px) {
+		right: 2%;
+	}
 
 	&:hover {
 		background: $text-primary;
