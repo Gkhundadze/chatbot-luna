@@ -131,8 +131,8 @@ h6 {
 
 .chat-icon {
   position: fixed;
-  bottom: 2.5%;
-  right: 2%;
+  bottom: 2%;
+  right: 2.5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -143,6 +143,11 @@ h6 {
   cursor: pointer;
   transition: all 0.3s;
   z-index: 9999999;
+}
+@media (max-width: 1537px) {
+  .chat-icon {
+    right: 2%;
+  }
 }
 .chat-icon:hover {
   background: #f5f5f5;
@@ -412,6 +417,11 @@ h6 {
     margin-bottom: 1rem;
   }
 }
+@media (max-width: 281px) {
+  .hero__title {
+    font-size: 3.4rem;
+  }
+}
 .hero p {
   font-family: "TBC Contractica";
   font-weight: 500;
@@ -625,6 +635,7 @@ h6 {
 .stars_wrapper {
   overflow: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #131a3e 100%);
+  padding-bottom: 6.4rem;
 }
 
 .heading-primary {
@@ -955,8 +966,8 @@ h6 {
 }
 .anima__wrapper {
   display: flex;
-  align-items: center;
   gap: 2rem;
+  justify-content: space-between;
   max-width: 1473px;
   margin: 0 auto;
 }
@@ -974,16 +985,18 @@ h6 {
 .anima__left {
   background-image: url(../../images/anima-left.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
 .anima__right {
   background-image: url(../../images/anima-right.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
 .anima__box {
   text-align: center;
   padding: 3.5rem 3.7rem;
+  border-radius: 1rem;
+  min-height: 29.5rem;
 }
 .anima__box h3 {
   font-family: "TBC Contractica CAPS";
@@ -1016,6 +1029,7 @@ h6 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .anima__main__header h2 {
   font-family: "TBC Contractica CAPS";
@@ -1036,4 +1050,73 @@ h6 {
 .stop-scrolling {
   height: 100%;
   overflow: hidden;
+}
+
+.copy {
+  background: #6691ff;
+}
+.copy__wrapper {
+  max-width: 1473px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 4rem;
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media (max-width: 1520px) {
+  .copy__wrapper {
+    padding: 0 2rem;
+  }
+}
+
+.footer {
+  background: #1e1e1e;
+}
+.footer__wrapper {
+  max-width: 1335px;
+  margin: 0 auto;
+  padding: 3.2rem 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 850px) {
+  .footer__wrapper {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.footer__column__title {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer__column__link {
+  display: flex;
+  text-decoration: none;
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #929292;
+}
+.footer__column__socials {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.sr-only {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
