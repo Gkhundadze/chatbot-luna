@@ -3,8 +3,9 @@
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: cover;
-	min-height: calc(100vh - 112px);
+	min-height: calc(100vh - 11.2rem);
 	position: relative;
+	padding-bottom: 5rem;
 
 	&__inner {
 		@include max-setter;
@@ -26,7 +27,7 @@
 		padding-top: 9.6rem;
 		margin-bottom: 4rem;
 
-		@media (max-width: 1700px) {
+		@media (max-width: 21700px) {
 			font-size: 5.5rem;
 			padding-top: 6.4rem;
 			margin-bottom: 2rem;
@@ -83,14 +84,14 @@
 	// }
 
 	&__img {
+		width: 75rem;
+
 		@media (max-width: 1700px) {
 			width: 65rem;
 		}
+
 		@media (max-width: 1600px) {
 			width: 60rem;
-		}
-		@media (max-width: 1500px) {
-			width: 55rem;
 		}
 	}
 
@@ -264,4 +265,490 @@
 .stars_wrapper {
 	overflow: hidden;
 	background: radial-gradient(ellipse at bottom, #1b2735 0%, #131a3e 100%);
+}
+
+.heading-primary {
+	font-family: "TBC Contractica CAPS";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.4rem;
+}
+
+.solar {
+	@include max-setter;
+	padding: 0;
+
+	&__planets {
+		display: flex;
+		padding: 6.4rem 0;
+
+		& > div div img {
+			position: relative;
+			z-index: 21321222;
+		}
+	}
+
+	&__text {
+		background: rgba(98, 98, 98, 0.2);
+		backdrop-filter: blur(5px);
+		border-radius: 1rem;
+		padding: 1.6rem;
+		text-align: center;
+
+		h2 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2rem;
+			line-height: 3.6rem;
+		}
+
+		p {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.4rem;
+			line-height: 2.1rem;
+			max-width: 18rem;
+		}
+	}
+
+	&__sun {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-line {
+			width: 0.6rem;
+			height: 17.5rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #f6ec42;
+			}
+		}
+	}
+
+	&__mercury {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 38rem;
+		margin-left: -3.5rem;
+
+		&-line {
+			margin-top: -3px;
+			width: 0.4rem;
+			height: 25.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #9daad6;
+			}
+		}
+	}
+
+	&__venus {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 16.5rem;
+		margin-left: -10.4rem;
+
+		&-line {
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #f48258;
+			}
+		}
+	}
+
+	&__earth {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 37rem;
+		margin-left: -9.6rem;
+
+		&-line {
+			margin-top: -1px;
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #2e78bc;
+			}
+		}
+	}
+	&__mars {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 6.5rem;
+		margin-left: -7.2rem;
+
+		&-line {
+			width: 0.6rem;
+			height: 17.5rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #ba4527;
+			}
+		}
+	}
+	&__jupiter {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 34.5rem;
+		margin-left: -7.2rem;
+
+		&-line {
+			margin-top: -3px;
+			width: 0.4rem;
+			height: 25.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #ed8851;
+			}
+		}
+	}
+	&__saturn {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 15.5rem;
+		margin-left: -2.7rem;
+
+		&-line {
+			margin-bottom: -6px;
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #e88624;
+			}
+		}
+	}
+	&__uranus {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 36rem;
+		margin-left: -5.7rem;
+
+		&-line {
+			margin-top: -8px;
+			width: 0.4rem;
+			height: 7.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #3dc4ea;
+			}
+		}
+	}
+
+	&__neptune {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 6.5rem;
+		margin-left: -9.2rem;
+
+		&-line {
+			width: 0.6rem;
+			height: 17.5rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #7d67ab;
+			}
+		}
+	}
+
+	&__pluto {
+		// position: absolute;
+		// left: 25%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 38rem;
+		margin-left: -10.5rem;
+
+		&-line {
+			margin-top: -1px;
+			width: 0.4rem;
+			height: 25.8rem;
+			background: #d9d9d9;
+		}
+
+		&-text {
+			h2 {
+				color: #186b90;
+			}
+		}
+	}
+}
+
+.about {
+	@include max-setter;
+	margin-bottom: 4rem;
+
+	&__wrapper {
+		margin-top: 6.4rem;
+		background: rgba(98, 98, 98, 0.2);
+		backdrop-filter: blur(5px);
+		/* Note: backdrop-filter has minimal browser support */
+
+		border-radius: 10px;
+		padding: 2.4rem;
+
+		display: flex;
+		gap: 13.6rem;
+
+		@media (max-width: 1500px) {
+			gap: 8rem;
+		}
+
+		@media (max-width: 1500px) {
+			gap: 4rem;
+		}
+
+		@media (max-width: 900px) {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__profile {
+		display: inline-block;
+		img {
+			margin-bottom: 3.3rem;
+		}
+
+		h3 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 2.4rem;
+			margin-bottom: 0.8rem;
+		}
+
+		p {
+			font-family: "TBC Contractica";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 1.6rem;
+			color: #929292;
+			margin-bottom: 2.3rem;
+		}
+
+		&__icons {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 1.8rem;
+
+			svg {
+				cursor: pointer;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		p {
+			font-family: "TBC Contractica";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 38px;
+			/* or 238% */
+
+			color: #ffffff;
+			max-width: 93rem;
+			// text-align: justify;
+			margin-bottom: 3.2rem;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 1.6rem 3.2rem;
+		gap: 1.6rem;
+		background-color: transparent;
+
+		border: 4px solid #6691ff;
+		border-radius: 1rem;
+
+		font-family: "TBC Contractica CAPS";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 1.4rem;
+		color: $base-color;
+		cursor: pointer;
+
+		svg {
+			margin-top: -5px;
+		}
+
+		transition: all 0.3s;
+
+		&:hover {
+			background: $text-primary;
+			color: $base-color;
+			border: 4px solid $text-primary;
+		}
+
+		&:active {
+			background: #435fa6;
+			color: $text-primary;
+
+			border: 4px solid #435fa6;
+
+			svg path {
+				stroke: $text-primary;
+				fill: #435fa6;
+			}
+		}
+	}
+}
+
+.anima {
+	background: rgba(98, 98, 98, 0.2);
+	backdrop-filter: blur(5px);
+	padding: 4.3rem 0;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 2rem; // grid-auto-columns: minmax(0, 1fr);
+		// grid-auto-flow: column;
+		@include max-setter;
+
+		@media (max-width: 1243px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__left {
+		background-image: url(../../images/anima-left.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__right {
+		background-image: url(../../images/anima-right.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__box {
+		text-align: center;
+		padding: 3.5rem 3.7rem;
+
+		h3 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 4.8rem;
+			color: #6691ff;
+		}
+
+		h4 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 2.4rem;
+			margin-bottom: 3.2rem;
+		}
+
+		p {
+			font-family: "TBC Contractica";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			max-width: 39.1rem;
+		}
+	}
+
+	&__main {
+		width: 47.2rem;
+		// padding: 0 2rem;
+
+		&__header {
+			display: flex;
+			gap: 2.4rem;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+			h2 {
+				font-family: "TBC Contractica CAPS";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 2.4rem;
+				color: #f5f5f5;
+			}
+		}
+
+		p {
+			font-family: "TBC Contractica";
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			color: #f5f5f5;
+
+			text-align: center;
+		}
+	}
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }

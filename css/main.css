@@ -23,6 +23,7 @@ body {
   height: 100%;
   font-size: 62.5%;
   color: #f5f5f5;
+  scroll-behavior: smooth;
 }
 
 /*
@@ -93,6 +94,11 @@ h6 {
   src: url(../fonts/TBCContractica-Medium.ttf);
   font-weight: 500;
 }
+@font-face {
+  font-family: TBC Contractica;
+  src: url(../fonts/TBCContractica-Regular.ttf);
+  font-weight: 400;
+}
 .btn {
   display: flex;
   gap: 1.6rem;
@@ -125,8 +131,8 @@ h6 {
 
 .chat-icon {
   position: fixed;
-  bottom: 4.5%;
-  right: 12%;
+  bottom: 2.5%;
+  right: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -284,8 +290,8 @@ h6 {
 @media (max-width: 1050px) {
   .nav {
     position: fixed;
-    inset: 0 0 0 50%;
-    z-index: 1000;
+    inset: 0 0 0 70%;
+    z-index: 100000;
     flex-direction: column;
     gap: 5rem;
     padding: 10rem 2rem;
@@ -299,6 +305,21 @@ h6 {
     transform: translateX(0%);
   }
 }
+@media (max-width: 850px) {
+  .nav {
+    inset: 0 0 0 60%;
+  }
+}
+@media (max-width: 634px) {
+  .nav {
+    inset: 0 0 0 50%;
+  }
+}
+@media (max-width: 550px) {
+  .nav {
+    inset: 0 0 0 40%;
+  }
+}
 
 .mobile-nav-toggle {
   display: none;
@@ -308,18 +329,18 @@ h6 {
     display: block;
     position: absolute;
     background-color: transparent;
-    background-image: url(../../images/menu-4-24.png);
+    background-image: url(./../images/menu-4-24.png);
     width: 3rem;
     background-repeat: no-repeat;
     border: 0;
     aspect-ratio: 1;
     top: 4.4rem;
-    right: 5rem;
-    z-index: 9999;
+    right: 3rem;
+    z-index: 999999;
   }
 }
 .mobile-nav-toggle[aria-expanded=true] {
-  background-image: url(../../images/icons8-close.svg);
+  background-image: url(./../images/icons8-close.svg);
   fill: #fff;
 }
 
@@ -336,7 +357,7 @@ h6 {
 }
 @media (max-width: 1520px) {
   .header__inner {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 .header__logos {
@@ -349,8 +370,9 @@ h6 {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  min-height: calc(100vh - 112px);
+  min-height: calc(100vh - 11.2rem);
   position: relative;
+  padding-bottom: 5rem;
 }
 .hero__inner {
   max-width: 1473px;
@@ -362,7 +384,7 @@ h6 {
 }
 @media (max-width: 1520px) {
   .hero__inner {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 .hero__text-container {
@@ -376,7 +398,7 @@ h6 {
   padding-top: 9.6rem;
   margin-bottom: 4rem;
 }
-@media (max-width: 1700px) {
+@media (max-width: 21700px) {
   .hero__title {
     font-size: 5.5rem;
     padding-top: 6.4rem;
@@ -423,6 +445,9 @@ h6 {
     margin-bottom: 4rem;
   }
 }
+.hero__img {
+  width: 75rem;
+}
 @media (max-width: 1700px) {
   .hero__img {
     width: 65rem;
@@ -431,11 +456,6 @@ h6 {
 @media (max-width: 1600px) {
   .hero__img {
     width: 60rem;
-  }
-}
-@media (max-width: 1500px) {
-  .hero__img {
-    width: 55rem;
   }
 }
 .hero__line {
@@ -458,7 +478,7 @@ h6 {
 }
 @media (max-width: 1520px) {
   .history__wrapper {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 }
 @media (min-width: 1200px) {
@@ -605,4 +625,415 @@ h6 {
 .stars_wrapper {
   overflow: hidden;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #131a3e 100%);
+}
+
+.heading-primary {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.solar {
+  max-width: 1473px;
+  margin: 0 auto;
+  padding: 0;
+}
+@media (max-width: 1520px) {
+  .solar {
+    padding: 0 2rem;
+  }
+}
+.solar__planets {
+  display: flex;
+  padding: 6.4rem 0;
+}
+.solar__planets > div div img {
+  position: relative;
+  z-index: 21321222;
+}
+.solar__text {
+  background: rgba(98, 98, 98, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border-radius: 1rem;
+  padding: 1.6rem;
+  text-align: center;
+}
+.solar__text h2 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.6rem;
+}
+.solar__text p {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  max-width: 18rem;
+}
+.solar__sun {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.solar__sun-line {
+  width: 0.6rem;
+  height: 17.5rem;
+  background: #d9d9d9;
+}
+.solar__sun-text h2 {
+  color: #f6ec42;
+}
+.solar__mercury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38rem;
+  margin-left: -3.5rem;
+}
+.solar__mercury-line {
+  margin-top: -3px;
+  width: 0.4rem;
+  height: 25.8rem;
+  background: #d9d9d9;
+}
+.solar__mercury-text h2 {
+  color: #9daad6;
+}
+.solar__venus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16.5rem;
+  margin-left: -10.4rem;
+}
+.solar__venus-line {
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__venus-text h2 {
+  color: #f48258;
+}
+.solar__earth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 37rem;
+  margin-left: -9.6rem;
+}
+.solar__earth-line {
+  margin-top: -1px;
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__earth-text h2 {
+  color: #2e78bc;
+}
+.solar__mars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.5rem;
+  margin-left: -7.2rem;
+}
+.solar__mars-line {
+  width: 0.6rem;
+  height: 17.5rem;
+  background: #d9d9d9;
+}
+.solar__mars-text h2 {
+  color: #ba4527;
+}
+.solar__jupiter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 34.5rem;
+  margin-left: -7.2rem;
+}
+.solar__jupiter-line {
+  margin-top: -3px;
+  width: 0.4rem;
+  height: 25.8rem;
+  background: #d9d9d9;
+}
+.solar__jupiter-text h2 {
+  color: #ed8851;
+}
+.solar__saturn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 15.5rem;
+  margin-left: -2.7rem;
+}
+.solar__saturn-line {
+  margin-bottom: -6px;
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__saturn-text h2 {
+  color: #e88624;
+}
+.solar__uranus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36rem;
+  margin-left: -5.7rem;
+}
+.solar__uranus-line {
+  margin-top: -8px;
+  width: 0.4rem;
+  height: 7.8rem;
+  background: #d9d9d9;
+}
+.solar__uranus-text h2 {
+  color: #3dc4ea;
+}
+.solar__neptune {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.5rem;
+  margin-left: -9.2rem;
+}
+.solar__neptune-line {
+  width: 0.6rem;
+  height: 17.5rem;
+  background: #d9d9d9;
+}
+.solar__neptune-text h2 {
+  color: #7d67ab;
+}
+.solar__pluto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 38rem;
+  margin-left: -10.5rem;
+}
+.solar__pluto-line {
+  margin-top: -1px;
+  width: 0.4rem;
+  height: 25.8rem;
+  background: #d9d9d9;
+}
+.solar__pluto-text h2 {
+  color: #186b90;
+}
+
+.about {
+  max-width: 1473px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+@media (max-width: 1520px) {
+  .about {
+    padding: 0 2rem;
+  }
+}
+.about__wrapper {
+  margin-top: 6.4rem;
+  background: rgba(98, 98, 98, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+  padding: 2.4rem;
+  display: flex;
+  gap: 13.6rem;
+}
+@media (max-width: 1500px) {
+  .about__wrapper {
+    gap: 8rem;
+  }
+}
+@media (max-width: 1500px) {
+  .about__wrapper {
+    gap: 4rem;
+  }
+}
+@media (max-width: 900px) {
+  .about__wrapper {
+    flex-wrap: wrap;
+  }
+}
+.about__profile {
+  display: inline-block;
+}
+.about__profile img {
+  margin-bottom: 3.3rem;
+}
+.about__profile h3 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+.about__profile p {
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #929292;
+  margin-bottom: 2.3rem;
+}
+.about__profile__icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.about__profile__icons svg {
+  cursor: pointer;
+}
+.about__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.about__info p {
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 38px;
+  /* or 238% */
+  color: #ffffff;
+  max-width: 93rem;
+  margin-bottom: 3.2rem;
+}
+.about__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+  gap: 1.6rem;
+  background-color: transparent;
+  border: 4px solid #6691ff;
+  border-radius: 1rem;
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #6691ff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.about__btn svg {
+  margin-top: -5px;
+}
+.about__btn:hover {
+  background: #f5f5f5;
+  color: #6691ff;
+  border: 4px solid #f5f5f5;
+}
+.about__btn:active {
+  background: #435fa6;
+  color: #f5f5f5;
+  border: 4px solid #435fa6;
+}
+.about__btn:active svg path {
+  stroke: #f5f5f5;
+  fill: #435fa6;
+}
+
+.anima {
+  background: rgba(98, 98, 98, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 4.3rem 0;
+}
+.anima__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1473px;
+  margin: 0 auto;
+}
+@media (max-width: 1520px) {
+  .anima__wrapper {
+    padding: 0 2rem;
+  }
+}
+@media (max-width: 1243px) {
+  .anima__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.anima__left {
+  background-image: url(../../images/anima-left.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.anima__right {
+  background-image: url(../../images/anima-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.anima__box {
+  text-align: center;
+  padding: 3.5rem 3.7rem;
+}
+.anima__box h3 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.8rem;
+  color: #6691ff;
+}
+.anima__box h4 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+}
+.anima__box p {
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  max-width: 39.1rem;
+}
+.anima__main {
+  width: 47.2rem;
+}
+.anima__main__header {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.anima__main__header h2 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: #f5f5f5;
+}
+.anima__main p {
+  font-family: "TBC Contractica";
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
