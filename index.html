@@ -8,15 +8,16 @@
 		<link rel="stylesheet" href="css/main.css" />
 		<script src="js/app.js" defer></script>
 		<script src="https://unpkg.com/scrollbooster@2/dist/scrollbooster.min.js"></script>
+		<link rel="preload" href="images/main-bg-image-min.jpg" as="image" />
 	</head>
 	<body>
 		<header class="header">
 			<div class="header__inner">
 				<div class="header__logos">
-					<a href="#">
+					<a href="https://iliauni.edu.ge/" target="_blank">
 						<img src="images/Ilia-logo.png" alt="Ilia State" />
 					</a>
-					<a href="#">
+					<a href="https://animachatbotics.com/" target="_blank">
 						<img src="images/Unilab-logo.png" alt="Ilia State" />
 					</a>
 				</div>
@@ -25,6 +26,7 @@
 					class="mobile-nav-toggle"
 					aria-controls="nav"
 					aria-expanded="false"
+					aria-label="mobile navigation toggle"
 				></button>
 
 				<nav>
@@ -35,13 +37,15 @@
 							>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">ისტორია</a>
+							<a class="nav__link" href="#history">ისტორია</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">მზის სისტემა</a>
+							<a class="nav__link" href="#solar">მზის სისტემა</a>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#">პროექტის შესახებ</a>
+							<a class="nav__link" href="#about"
+								>პროექტის შესახებ</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -93,7 +97,7 @@
 				</div>
 			</div>
 
-			<div class="hero__line"></div>
+			<!-- <div class="hero__line"></div> -->
 		</section>
 
 		<div class="chat-icon">
@@ -115,7 +119,7 @@
 			<div id="stars"></div>
 			<div id="stars2"></div>
 			<div id="stars3"></div>
-			<section class="history">
+			<section id="history" class="history">
 				<div class="history__wrapper">
 					<div class="history__miths">
 						<img src="images/history_1.png" alt="" />
@@ -331,7 +335,7 @@
 				</div>
 			</section>
 
-			<section class="solar">
+			<section id="solar" class="solar">
 				<div class="heading-primary">ჩვენი მზის სისტემა</div>
 
 				<div class="solar__planets">
@@ -504,7 +508,7 @@
 				</div>
 			</section>
 
-			<section class="about">
+			<section id="about" class="about">
 				<h2 class="heading-primary">პროექტის შესახებ</h2>
 				<div class="about__wrapper">
 					<div class="about__profile">
@@ -603,6 +607,47 @@
 
 							ინსტრუქცია
 						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="anima">
+				<div class="anima__wrapper">
+					<div class="anima__box anima__left">
+						<h3>8 წელი</h3>
+						<h4>წელი ციფრულ სამყაროში</h4>
+						<p>
+							ანიმა ჩეთბოტიქსს უკვე 9 სხვადასხვა ჩეთბოტი აქვს
+							შექმნილი პროექტის ფარგლებში
+						</p>
+					</div>
+					<div class="anima__main">
+						<div class="anima__main__header">
+							<img
+								src="images/animalogo.png"
+								alt="Anima Chatbotics Logo"
+							/>
+							<h2>ანიმა ჩეთბოტიქსი</h2>
+						</div>
+
+						<p>
+							Anima Chatbotics არის კომპანია, რომელიც აერთიანებს
+							ანტრეპრენიორებს, პროგრამისტებსა და ნარატივ
+							დიზაინერებს ერთი საერთო მიზნის ქვეშ - შევქმნათ
+							ცოცხალი და თავისი “სულის” მქონე ციფრული ასისტენტები,
+							ე.წ. “ჩეთბოტები”. აქედან გამომდინარეობს დასახელებაც:
+							Chatbotics - პროგრამული კოდის, ალგორითმების და
+							ავატარების შექმნის ხელოვნებაა, ტექნიკური მხარე,
+							“Anima” კი ლათინურად სულს ნიშნავს.
+						</p>
+					</div>
+					<div class="anima__box anima__right">
+						<h3>9</h3>
+						<h4>წარმატებული ჩეთბოტი</h4>
+						<p>
+							ანიმა ჩეთბოტიქსს უკვე 9 სხვადასხვა ჩეთბოტი აქვს
+							შექმნილი პროექტის ფარგლებში
+						</p>
 					</div>
 				</div>
 			</section>

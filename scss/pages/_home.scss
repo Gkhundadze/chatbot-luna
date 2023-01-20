@@ -5,6 +5,7 @@
 	background-size: cover;
 	min-height: calc(100vh - 11.2rem);
 	position: relative;
+	padding-bottom: 5rem;
 
 	&__inner {
 		@include max-setter;
@@ -26,7 +27,7 @@
 		padding-top: 9.6rem;
 		margin-bottom: 4rem;
 
-		@media (max-width: 1700px) {
+		@media (max-width: 21700px) {
 			font-size: 5.5rem;
 			padding-top: 6.4rem;
 			margin-bottom: 2rem;
@@ -83,14 +84,14 @@
 	// }
 
 	&__img {
+		width: 75rem;
+
 		@media (max-width: 1700px) {
 			width: 65rem;
 		}
+
 		@media (max-width: 1600px) {
 			width: 60rem;
-		}
-		@media (max-width: 1500px) {
-			width: 55rem;
 		}
 	}
 
@@ -626,7 +627,7 @@
 		font-style: normal;
 		font-weight: 700;
 		font-size: 1.4rem;
-		color: #6691ff;
+		color: $base-color;
 		cursor: pointer;
 
 		svg {
@@ -638,11 +639,6 @@
 		&:hover {
 			background: $text-primary;
 			color: $base-color;
-
-			svg path {
-				fill: $text-primary;
-			}
-
 			border: 4px solid $text-primary;
 		}
 
@@ -652,9 +648,107 @@
 
 			border: 4px solid #435fa6;
 
-			&:last-child {
-				fill: $text-primary;
+			svg path {
+				stroke: $text-primary;
+				fill: #435fa6;
 			}
 		}
 	}
+}
+
+.anima {
+	background: rgba(98, 98, 98, 0.2);
+	backdrop-filter: blur(5px);
+	padding: 4.3rem 0;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		gap: 2rem; // grid-auto-columns: minmax(0, 1fr);
+		// grid-auto-flow: column;
+		@include max-setter;
+
+		@media (max-width: 1243px) {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	&__left {
+		background-image: url(../../images/anima-left.png);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__right {
+		background-image: url(../../images/anima-right.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&__box {
+		text-align: center;
+		padding: 3.5rem 3.7rem;
+
+		h3 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 700;
+			font-size: 4.8rem;
+			color: #6691ff;
+		}
+
+		h4 {
+			font-family: "TBC Contractica CAPS";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 2.4rem;
+			margin-bottom: 3.2rem;
+		}
+
+		p {
+			font-family: "TBC Contractica";
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			max-width: 39.1rem;
+		}
+	}
+
+	&__main {
+		width: 47.2rem;
+		// padding: 0 2rem;
+
+		&__header {
+			display: flex;
+			gap: 2.4rem;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+
+			h2 {
+				font-family: "TBC Contractica CAPS";
+				font-style: normal;
+				font-weight: 700;
+				font-size: 2.4rem;
+				color: #f5f5f5;
+			}
+		}
+
+		p {
+			font-family: "TBC Contractica";
+			font-weight: 400;
+			font-size: 1.6rem;
+			line-height: 2.4rem;
+			color: #f5f5f5;
+
+			text-align: center;
+		}
+	}
+}
+
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
 }
