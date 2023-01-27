@@ -1,6 +1,12 @@
 const nav = document.querySelector(".nav");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
+const openModal = document.querySelector(".about__btn");
+const modal = document.querySelector(".instructions");
+
+openModal.addEventListener("click", () => {
+	modal.showModal();
+});
 
 navToggle.addEventListener("click", () => {
 	const visibility = nav.getAttribute("data-visible");

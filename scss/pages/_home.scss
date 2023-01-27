@@ -827,3 +827,41 @@
 .sr-only {
 	display: none;
 }
+
+.instructions {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 64.8rem;
+	background: #1e1e1e;
+	border-radius: 1rem;
+	padding: 4rem;
+	border: none;
+	text-align: center;
+
+	h3 {
+		font-family: "TBC Contractica CAPS";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 36px;
+		color: #f5f5f5;
+		margin-top: 3.2rem;
+		margin-bottom: 2.4rem;
+	}
+
+	p {
+		font-family: "TBC Contractica";
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 36px;
+		text-align: center;
+		color: #f5f5f5;
+	}
+
+	&::backdrop {
+		background: rgba(0, 0, 0, 0.8);
+	}
+}
