@@ -29,7 +29,7 @@
 					aria-label="mobile navigation toggle"
 				></button>
 
-				<nav>
+				<nav id="nav-outer">
 					<ul id="nav" class="nav" data-visible="false">
 						<li class="nav__item">
 							<a class="nav__link nav__link-active" href="#"
@@ -652,15 +652,82 @@
 				</div>
 			</section>
 		</div>
-
 		<dialog class="instructions" id="instructions">
-			<img src="images/modal-img.png" alt="" />
-			<h3>პირველი ეტაპი</h3>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-				debitis incidunt ipsam ullam totam nulla rem veniam obcaecati
-				nisi voluptas?
-			</p>
+			<div class="instructions-wrapper">
+				<div id="first-tab" class="tabcontent">
+					<img src="images/modal-img.png" alt="" />
+					<h3>პირველი ეტაპი</h3>
+					<p>
+						Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო
+						ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც
+						უცნობმა მბეჭდავმა ამწყობ
+					</p>
+				</div>
+
+				<div id="second-tab" class="tabcontent">
+					<img src="images/Top_PR_Books.jpg" alt="" />
+					<h3>მეორე ეტაპი</h3>
+					<p>
+						Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო
+						ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც
+						უცნობმა მბეჭდავმა ამწყობ
+					</p>
+				</div>
+
+				<div id="third-tab" class="tabcontent">
+					<img src="images/openbooks.jpg" alt="" />
+					<h3>მესამე ეტაპი</h3>
+					<p>
+						Lorem Ipsum საბეჭდი და ტიპოგრაფიული ინდუსტრიის უშინაარსო
+						ტექსტია. იგი სტანდარტად 1500-იანი წლებიდან იქცა, როდესაც
+						უცნობმა მბეჭდავმა ამწყობ
+					</p>
+				</div>
+
+				<div class="bullets">
+					<button id="btn1" class="dots">
+						<svg
+							width="12"
+							height="12"
+							viewBox="0 0 12 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle cx="6" cy="6" r="6" fill="#929292" />
+						</svg>
+					</button>
+
+					<button id="btn2" class="dots">
+						<svg
+							width="12"
+							height="12"
+							viewBox="0 0 12 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle cx="6" cy="6" r="6" fill="#929292" />
+						</svg>
+					</button>
+					<button id="btn3" class="dots">
+						<svg
+							width="12"
+							height="12"
+							viewBox="0 0 12 12"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<circle cx="6" cy="6" r="6" fill="#929292" />
+						</svg>
+					</button>
+				</div>
+
+				<div class="instructions__buttons">
+					<button class="instructions__buttons__close">
+						გათიშვა
+					</button>
+					<button class="instructions__buttons__next">შემდეგი</button>
+				</div>
+			</div>
 		</dialog>
 
 		<section class="copy">
