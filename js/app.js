@@ -5,6 +5,7 @@ const navLinks = document.querySelectorAll(".nav__link");
 const openModal = document.querySelector(".about__btn");
 const modal = document.querySelector(".instructions");
 const modalClose = document.querySelector(".instructions__buttons__close");
+const chatStart = document.querySelector("#chat-start-text");
 
 openModal.addEventListener("click", () => {
 	modal.showModal();
@@ -17,7 +18,6 @@ modalClose.addEventListener("click", () => {
 });
 
 modal.addEventListener("click", (e) => {
-	console.log(e.target);
 	if (e.target === modal) {
 		modal.close();
 		document.body.classList.toggle("stop-scrolling");
@@ -53,10 +53,10 @@ new ScrollBooster({
 	textSelection: "true",
 });
 
+// ინსტრუქციის მოდალის ფუნქციონალი
 const tabs = document.querySelectorAll(".tabcontent");
 const dots = document.querySelectorAll(".dots");
 const nextButton = document.querySelector(".instructions__buttons__next");
-
 let currentTab = 0;
 
 dots.forEach((dot, index) => {
@@ -84,3 +84,25 @@ function updateTabs() {
 }
 
 updateTabs();
+
+// ჩატის დაწყების ღილაკზე ფანჯრის გახსნა
+chatStart.addEventListener("click", () => {
+	document.querySelector(".chatbot__btn").click();
+});
+
+// ჩეთის ფანჯრის გახსნა
+document.querySelector(".chatbot__btn").addEventListener("click", (e) => {
+	let child = e.target.querySelector("div");
+
+	if (child.className == "chatbot__open__btn") {
+		child.className = "chatbot__close__btn";
+		document
+			.getElementById("chatbotIframe")
+			.setAttribute("style", "display: block;");
+	} else {
+		child.className = "chatbot__open__btn";
+		document
+			.getElementById("chatbotIframe")
+			.setAttribute("style", "display: none");
+	}
+});
