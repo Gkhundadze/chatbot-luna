@@ -129,39 +129,89 @@ h6 {
   fill: #f5f5f5;
 }
 
-.chat-icon {
-  position: fixed;
+.chatbot__container {
   bottom: 2%;
   right: 2.5%;
+  position: fixed;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 6.4rem;
-  width: 6.4rem;
-  border-radius: 50%;
-  background: #6691ff;
-  cursor: pointer;
-  transition: all 0.3s;
+  flex-direction: column;
+  align-items: flex-end;
   z-index: 9999999;
 }
 @media (max-width: 1537px) {
-  .chat-icon {
+  .chatbot__container {
     right: 2%;
   }
 }
-.chat-icon:hover {
+
+.chatbot__btn {
+  background: #6691ff;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+  height: 10vh;
+  width: 10vh;
+  max-height: 64px;
+  max-width: 64px;
+  min-height: 60px;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.chatbot__btn:hover {
   background: #f5f5f5;
-  color: #6691ff;
 }
-.chat-icon:hover svg path {
-  fill: #6691ff;
-}
-.chat-icon:active {
+.chatbot__btn:active {
   background: #435fa6;
-  color: #f5f5f5;
 }
-.chat-icon:active svg path {
-  fill: #f5f5f5;
+
+.chatbot__btn::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.chatbot__open__btn {
+  height: 30px;
+  width: 30px;
+  -webkit-mask-image: url("./../images/mdi_message-processing-outline.svg");
+  mask-image: url("./../images/mdi_message-processing-outline.svg");
+  background-color: #f5f5f5;
+}
+
+.chatbot__btn:hover .chatbot__open__btn {
+  background-color: #6691ff;
+}
+
+.chatbot__btn:active .chatbot__open__btn {
+  background-color: #f5f5f5;
+}
+
+.chatbot__close__btn {
+  -webkit-mask-image: url("./../images/icons8-close-40.svg");
+  mask-image: url("./../images/icons8-close-40.svg");
+  background-color: #f5f5f5;
+  height: 4rem;
+  width: 4rem;
+}
+
+.chatbot__btn:hover .chatbot__close__btn {
+  background-color: #6691ff;
+}
+
+.chatbot__btn:active .chatbot__close__btn {
+  background-color: #f5f5f5;
+}
+
+#chatbotIframe {
+  width: 370px;
+  height: 480px;
 }
 
 #stars {
@@ -334,18 +384,18 @@ h6 {
     display: block;
     position: absolute;
     background-color: transparent;
-    background-image: url(./../images/menu-4-24.png);
-    width: 3rem;
+    background-image: url(./../images/charm_menu-hamburger.svg);
+    width: 4rem;
     background-repeat: no-repeat;
     border: 0;
     aspect-ratio: 1;
-    top: 4.4rem;
+    top: 4rem;
     right: 3rem;
     z-index: 999999;
   }
 }
 .mobile-nav-toggle[aria-expanded=true] {
-  background-image: url(./../images/icons8-close.svg);
+  background-image: url(./../images/icons8-close-40.svg);
   fill: #fff;
 }
 
@@ -367,6 +417,7 @@ h6 {
 }
 .header__logos {
   display: flex;
+  align-items: center;
   gap: 1.6rem;
 }
 
@@ -983,12 +1034,12 @@ h6 {
   }
 }
 .anima__left {
-  background-image: url(../../images/anima-left.png);
+  background-image: url(./../images/anima-left.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .anima__right {
-  background-image: url(../../images/anima-right.svg);
+  background-image: url(./../images/anima-right.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1119,4 +1170,187 @@ h6 {
 
 .sr-only {
   display: none;
+}
+
+.instructions {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 66rem;
+  background: #1e1e1e;
+  border-radius: 1rem;
+  border: none;
+  text-align: center;
+}
+.instructions-wrapper {
+  padding: 3.5rem;
+}
+@media (max-width: 700px) {
+  .instructions-wrapper {
+    padding: 2.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .instructions-wrapper {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 700px) {
+  .instructions {
+    width: 90%;
+  }
+}
+@media (max-width: 400px) {
+  .instructions {
+    width: 90%;
+  }
+}
+.instructions img {
+  width: 100%;
+  max-height: 34.3rem;
+  border-radius: 1rem;
+}
+@media (max-width: 700px) {
+  .instructions img {
+    max-height: 18rem;
+  }
+}
+.instructions h3 {
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #f5f5f5;
+  margin-top: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+@media (max-width: 700px) {
+  .instructions h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 700px) {
+  .instructions h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+.instructions p {
+  font-family: "TBC Contractica";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #f5f5f5;
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 700px) {
+  .instructions p {
+    font-size: 2rem;
+    margin-bottom: 2.6rem;
+  }
+}
+.instructions::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.instructions::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+.instructions .bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  margin-bottom: 5.2rem;
+}
+@media (max-width: 700px) {
+  .instructions .bullets {
+    margin-bottom: 2.6rem;
+  }
+}
+.instructions .bullets svg {
+  cursor: pointer;
+}
+.instructions .bullets button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.instructions__buttons {
+  display: flex;
+  gap: 3.2rem;
+}
+@media (max-width: 700px) {
+  .instructions__buttons {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+}
+.instructions__buttons__close {
+  border: 3px solid #929292;
+  border-radius: 10px;
+  padding: 1.6rem 9.5rem;
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background: transparent;
+  color: #929292;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.instructions__buttons__close:hover {
+  background: #f5f5f5;
+  border: 3px solid #f5f5f5;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  color: #6691ff;
+}
+.instructions__buttons__close:active {
+  background: #435fa6;
+  border: 3px solid #435fa6;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+}
+.instructions__buttons__next {
+  background: #6691ff;
+  border-radius: 10px;
+  padding: 1.6rem 9.5rem;
+  font-family: "TBC Contractica CAPS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f5f5f5;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+.instructions__buttons__next:hover {
+  background: #f5f5f5;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  color: #6691ff;
+}
+.instructions__buttons__next:active {
+  background: #435fa6;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  color: #f5f5f5;
+}
+
+.tabcontent {
+  display: none;
+}
+
+.active svg circle {
+  fill: #f5f5f5;
 }/*# sourceMappingURL=main.css.map */
