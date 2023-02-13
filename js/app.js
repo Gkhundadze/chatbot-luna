@@ -106,3 +106,20 @@ document.querySelector(".chatbot__btn").addEventListener("click", (e) => {
 			.setAttribute("style", "display: none");
 	}
 });
+
+// ACCORDION
+
+const accItems = document.querySelectorAll(".footer__column");
+
+accItems.forEach((listElement) => {
+	listElement.addEventListener("click", () => {
+		if (listElement.classList.contains("active")) {
+			listElement.classList.remove("active");
+		} else {
+			accItems.forEach((listE) => {
+				listE.classList.remove("active");
+			});
+			listElement.classList.toggle("active");
+		}
+	});
+});
