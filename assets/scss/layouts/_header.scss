@@ -2,6 +2,12 @@
 	background: $base-color;
 	padding: 2.4rem 0rem;
 
+	@media (min-width: 1051px) {
+		position: sticky;
+		top: 0;
+		z-index: 999999999999999999999;
+	}
+
 	&__inner {
 		display: flex;
 		align-items: center;
