@@ -576,7 +576,7 @@
 		@media (max-width: 900px) {
 			flex-wrap: wrap;
 			justify-content: center;
-			text-align: center;
+			text-align: left;
 		}
 	}
 
@@ -765,8 +765,8 @@
 			text-align: center;
 			margin-bottom: 1rem;
 
-			@media (max-width: 400px) {
-				gap: 1.4rem;
+			a {
+				text-decoration: none;
 			}
 
 			h2 {
@@ -1251,4 +1251,8 @@
 
 .solar__planets::-webkit-scrollbar {
 	display: none;
+}
+
+.copy__date {
+	margin-left: 5px;
 }

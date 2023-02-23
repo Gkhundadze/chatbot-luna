@@ -21,9 +21,11 @@ body {
 	font-size: 62.5%;
 	color: $text-primary;
 	scroll-behavior: smooth;
+	scroll-padding-top: 70px;
 
 	@media (max-width: 1050px) {
 		height: 100%;
+		scroll-padding-top: 20px;
 	}
 }
 /*

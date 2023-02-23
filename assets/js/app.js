@@ -247,3 +247,7 @@ texts.forEach((item) => {
 		item.textContent = historyTextObject.miths;
 	}
 });
+
+const yearSpan = document.querySelector(".copy__date");
+const currentYear = new Date().getFullYear();
+yearSpan.textContent = currentYear;
