@@ -95,19 +95,35 @@
 
 				<nav id="nav-outer">
 					<ul id="nav" class="nav" data-visible="false">
-						<li class="nav__item">
-							<a class="nav__link nav__link-active" href="#"
+						<li class="nav__item nav-first">
+							<a
+								class="nav__link nav__link-active"
+								href="#hero"
+								data-target="main"
 								>მთავარი</a
 							>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#history">ისტორია</a>
+							<a
+								class="nav__link"
+								href="#history"
+								data-target="history"
+								>ისტორია</a
+							>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#solar">მზის სისტემა</a>
+							<a
+								class="nav__link"
+								href="#solar"
+								data-target="solar"
+								>მზის სისტემა</a
+							>
 						</li>
 						<li class="nav__item">
-							<a class="nav__link" href="#about"
+							<a
+								class="nav__link"
+								href="#about"
+								data-target="about"
 								>პროექტის შესახებ</a
 							>
 						</li>
@@ -116,7 +132,7 @@
 			</div>
 		</header>
 
-		<section class="hero">
+		<section class="hero" id="hero">
 			<div class="hero__inner">
 				<div class="hero__text-container">
 					<h1 class="hero__title">
@@ -155,7 +171,7 @@
 
 				<div class="hero__img">
 					<img
-						src="assets/images/luna-illustration.png"
+						src="assets/images/illustration.svg"
 						alt="Luna Illustration"
 					/>
 				</div>

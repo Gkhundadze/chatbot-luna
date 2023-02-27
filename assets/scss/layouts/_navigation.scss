@@ -16,21 +16,23 @@
 		}
 
 		&-active {
-			position: relative;
+			@media (min-width: 1051px) {
+				position: relative;
 
-			&::after {
-				position: absolute;
-				content: "";
-				bottom: -8px;
-				left: 0;
-				background-color: $text-primary;
-				width: 70%;
-				height: 4px;
-				border-radius: 1rem;
-			}
+				&::after {
+					position: absolute;
+					content: "";
+					bottom: -8px;
+					left: 0;
+					background-color: $text-primary;
+					width: 70%;
+					height: 4px;
+					border-radius: 1rem;
+				}
 
-			&:hover {
-				text-shadow: none;
+				&:hover {
+					text-shadow: none;
+				}
 			}
 		}
 	}
