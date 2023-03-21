@@ -334,6 +334,12 @@
 			font-size: 1.4rem;
 			line-height: 2.1rem;
 			max-width: 18rem;
+			text-align: center;
+
+			@media (max-width: 1400px) {
+				width: 22rem;
+				text-align: left;
+			}
 		}
 	}
 
@@ -358,7 +364,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 38rem;
+		padding-top: 50rem;
 		margin-left: -3.5rem;
 
 		&-line {
@@ -381,7 +387,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 16.5rem;
+		padding-top: 21rem;
 		margin-left: -10.4rem;
 
 		&-line {
@@ -403,8 +409,8 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 37rem;
-		margin-left: -9.6rem;
+		padding-top: 49rem;
+		margin-left: -8rem;
 
 		&-line {
 			margin-top: -1px;
@@ -425,7 +431,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 6.5rem;
+		padding-top: 12.5rem;
 		margin-left: -7.2rem;
 
 		&-line {
@@ -446,7 +452,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 34.5rem;
+		padding-top: 46.5rem;
 		margin-left: -7.2rem;
 
 		&-line {
@@ -468,7 +474,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 15.5rem;
+		padding-top: 25.5rem;
 		margin-left: -2.7rem;
 
 		&-line {
@@ -490,7 +496,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 36rem;
+		padding-top: 47rem;
 		margin-left: -5.7rem;
 
 		&-line {
@@ -513,7 +519,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 6.5rem;
+		padding-top: 13.5rem;
 		margin-left: -9.2rem;
 
 		&-line {
@@ -535,7 +541,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-top: 38rem;
+		padding-top: 48rem;
 		margin-left: -10.5rem;
 
 		&-line {
