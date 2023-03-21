@@ -1,7 +1,6 @@
 import { historyTextObject } from "./history-data.js";
 
 const nav = document.querySelector(".nav");
-const navOuter = document.querySelector("#nav-outer");
 const navToggle = document.querySelector(".mobile-nav-toggle");
 const navLinks = document.querySelectorAll(".nav__link");
 const openModal = document.querySelector(".about__btn");
@@ -189,13 +188,10 @@ histyoryModalCloseBtn.addEventListener("click", (e) => {
 
 // SOLAR PLANETS SECTION DRAGGING FUNCTIONALITY
 
-// get the solar__planets div
 const solarPlanets = document.querySelector(".solar__planets");
 
-// add scroll functionality
 solarPlanets.style.overflowX = "scroll";
 
-// add drag functionality
 let isDragging = false;
 let touchStartX = 0;
 let scrollLeftStart = 0;
@@ -235,7 +231,7 @@ solarPlanets.addEventListener("touchmove", (e) => {
 	solarPlanets.scrollLeft = scrollLeftStart - distanceX;
 });
 
-//
+// populate texts for history section
 const texts = document.querySelectorAll(".history__text");
 
 texts.forEach((item) => {
@@ -248,6 +244,49 @@ texts.forEach((item) => {
 	}
 });
 
+// Update year in the copyright section
+
 const yearSpan = document.querySelector(".copy__date");
 const currentYear = new Date().getFullYear();
 yearSpan.textContent = currentYear;
+
+// Code to add active class to the navigation element
+
+const links = document.querySelectorAll(".nav__link");
+const sections = document.querySelectorAll("section");
+const navs = document.querySelectorAll("#nav a");
+
+links.forEach((link) => {
+	link.addEventListener("click", (event) => {
+		if (link.getAttribute("href") === "#hero") {
+			event.preventDefault();
+			document.documentElement.scrollTop = 0;
+		} else {
+			setTimeout(() => {
+				links.forEach((link) =>
+					link.classList.remove("nav__link-active")
+				);
+				link.classList.add("nav__link-active");
+			}, 1000);
+		}
+	});
+});
+
+window.addEventListener("scroll", () => {
+	let current = "";
+
+	sections.forEach((section) => {
+		const sectionTop = section.offsetTop;
+		if (pageYOffset >= sectionTop - 112) {
+			current = section.getAttribute("id");
+		}
+	});
+
+	navs.forEach((link) => {
+		link.classList.remove("nav__link-active");
+		const linkHref = link.getAttribute("href");
+		if (linkHref === `#${current}`) {
+			link.classList.add("nav__link-active");
+		}
+	});
+});
