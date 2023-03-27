@@ -133,7 +133,7 @@ new Glide(".glide-anima", {
 			perView: 1.5,
 		},
 		600: {
-			perView: 1.1,
+			perView: 1.05,
 		},
 	},
 }).mount();
